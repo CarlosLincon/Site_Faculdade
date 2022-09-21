@@ -1,7 +1,7 @@
 import { AiFillCaretDown } from "react-icons/ai";
 import styles from "./Header.module.css";
 import logo from "../../images/faculdade_branco.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { useWindowSize } from 'usehooks-ts'
 
@@ -10,14 +10,20 @@ import { useWindowSize } from 'usehooks-ts'
 
 
 export default function Header() {
-    const { width, height } = useWindowSize()
+    const { width } = useWindowSize()
     const [isActive, setActive] = useState(false);
+    
     const toggleClass = () => {
-        if(width > 1068){
-            
-        }
+       setActive(!isActive);
     };
-   
+ 
+    useEffect(() =>{
+        if(width > 1280){
+            setActive(false)
+        }else{
+            console.log("Não bateu a condição")
+        }
+    })
     
 
     return (
@@ -27,11 +33,12 @@ export default function Header() {
 
             <nav className={styles.navbar}>
                 <img src={logo} alt="Logo Santissimo" className={styles.nav_branding} />
+                
                 <ul
 
                     className={classNames({
-                        [styles.nav_menu]: !isActive || width > 1068,
-                        [styles.nav_menu_active]: isActive && width <= 1068
+                        [styles.nav_menu]: !isActive,
+                        [styles.nav_menu_active]: isActive
                     })}
 
                 >
