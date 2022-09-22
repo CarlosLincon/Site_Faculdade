@@ -1,6 +1,6 @@
 import { AiFillCaretDown } from "react-icons/ai";
 import styles from "./Header.module.css";
-import logo from "../../images/faculdade_branco.png";
+
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { useWindowSize } from 'usehooks-ts'
@@ -32,7 +32,7 @@ export default function Header() {
         <header>
 
             <nav className={styles.navbar}>
-                <img src={logo} alt="Logo Santissimo" className={styles.nav_branding} />
+                <img  alt="Logo Santissimo" className={styles.nav_branding} />
                 
                 <ul
 
