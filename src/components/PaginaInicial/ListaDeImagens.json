@@ -1,0 +1,15 @@
+[
+{
+  "id":1,
+  "discricao": "vagas para monitorias",
+  "src": "/assets/images/monitoria.png"
+},{
+  "id":2,
+    "discricao": "Seleção dos docentes",
+    "src": "/assets/images/edital_professores.png"
+},{
+  "id":3,
+    "discricao": "Códigos de turma",
+    "src": "/assets/images/passoapasso.png"
+}
+]

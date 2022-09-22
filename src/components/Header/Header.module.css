@@ -50,8 +50,7 @@
  */
 
 header {
-  
-  background-color: var(--BlueMenu);
+  background-color: #040249;
 }
 
 header li {
@@ -132,9 +131,16 @@ header span.nav_link {
 }
 
 @media (max-width: 1280px) {
-  header {
-    
-    top: 0;
+  .nav_branding {
+    width: 175px;
+    height: 85px;
+    margin-right: 50px;
+    object-fit: contain;
+  }
+  
+  header span.nav_link {
+  
+    font-size: .9rem;
   }
   .hamburger {
     display: block;
@@ -180,7 +186,8 @@ header span.nav_link {
     margin: 16px 0;
     width: 50%;
     background-color: #f1f1f1;
-    font-size: 1rem;
+    font-size: 2.2rem;
+    height: 125px;
   }
   .nav_menu_active {
     display: flex;
@@ -195,11 +202,12 @@ header span.nav_link {
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: #050438;
-    width: 50%;
+    width: 75%;
     text-align: center;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     position: fixed;
+  height: 70vh;
   }
 }
