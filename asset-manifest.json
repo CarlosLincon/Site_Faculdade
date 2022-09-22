@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/%7BSite_Faculdade%7D/static/css/main.f307cfd1.css",
+    "main.js": "/%7BSite_Faculdade%7D/static/js/main.576944c9.js",
+    "static/js/787.e4a447d3.chunk.js": "/%7BSite_Faculdade%7D/static/js/787.e4a447d3.chunk.js",
+    "static/media/faculdade_branco.png": "/%7BSite_Faculdade%7D/static/media/faculdade_branco.de8bc95c7127d1d670dc.png",
+    "index.html": "/%7BSite_Faculdade%7D/index.html",
+    "main.f307cfd1.css.map": "/%7BSite_Faculdade%7D/static/css/main.f307cfd1.css.map",
+    "main.576944c9.js.map": "/%7BSite_Faculdade%7D/static/js/main.576944c9.js.map",
+    "787.e4a447d3.chunk.js.map": "/%7BSite_Faculdade%7D/static/js/787.e4a447d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f307cfd1.css",
+    "static/js/main.576944c9.js"
+  ]
+}
