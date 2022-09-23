@@ -1,30 +1,33 @@
 import { AiFillCaretDown } from "react-icons/ai";
 import styles from "./Header.module.css";
-
+import logo from "../../images/faculdade_branco.png";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
-import { useWindowSize } from 'usehooks-ts'
+import TamanhoDaTela from "../TamanhoDaTela";
+
 
 
 
 
 
 export default function Header() {
-    const { width } = useWindowSize()
+
+    let TamanhoTela = TamanhoDaTela();
     const [isActive, setActive] = useState(false);
-    
+        
+
     const toggleClass = () => {
-       setActive(!isActive);
+        setActive(!isActive);
     };
- 
-    useEffect(() =>{
-        if(width > 1280){
+
+    useEffect(() => {
+        if ( TamanhoTela > 1280) {
             setActive(false)
-        }else{
-            console.log("Não bateu a condição")
+        } else {
+
         }
     })
-    
+
 
     return (
 
@@ -32,8 +35,8 @@ export default function Header() {
         <header>
 
             <nav className={styles.navbar}>
-                <img  alt="Logo Santissimo" className={styles.nav_branding} />
-                
+                <img src={logo} alt="Logo Santissimo" className={styles.nav_branding} />
+
                 <ul
 
                     className={classNames({
