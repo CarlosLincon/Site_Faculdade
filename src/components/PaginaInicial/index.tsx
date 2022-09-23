@@ -3,7 +3,10 @@ import styles from "./PaginaInicial.module.css";
 import ListaIMG from "./ListaDeImagens.json";
 import TamanhoDaTela from "../TamanhoDaTela";
 import { useEffect, useState } from "react";
-
+import classNames from "classnames";
+import { Stack, Pagination, PaginationItem } from "@mui/material";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 
@@ -14,30 +17,48 @@ const PaginaInicial = () => {
     const [isActive, setActive] = useState(true);
 
 
-    const toggleClass = () => {
-        setActive(!isActive);
-    };
-
     useEffect(() => {
         if (TamanhoTela <= TelaMinima) {
-            setActive(false)
+            setActive(false);
         } else {
-            setActive(true)
+            setActive(true);
         }
     })
 
 
     return (
-        <section className={styles.container} >
+        <section className="container" >
             {
                 isActive ? (
-                    <div className={styles.grid_container}>
+                    <div className={classNames({
+                        [styles.grid_container_mb]: !isActive,
+                        [styles.grid_container]: isActive
+                    })}>
                         {ListaIMG.map(item => (
                             <div key={item.id} className={styles.grid_item}><img src={item.src} alt={item.discricao} /></div>
                         ))}
+
                     </div>
                 ) : (
-                    <p></p>
+                    <div className={styles.containerGrid}>
+                        <div className={styles.grid_container_mb}>
+                            {ListaIMG.map(item => (
+                                <div key={item.id} className={styles.grid_item_mb}><img src={item.src} alt={item.discricao} /></div>
+                            ))}
+                        </div>
+                        <Stack spacing={2}>
+                            <Pagination
+                                count={ListaIMG.length}
+                                renderItem={(item) => (
+                                    <PaginationItem
+                                        components={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
+                                        {...item}
+                                    />
+                                )}
+                            />
+                        </Stack>
+                    </div>
+
                 )
             }
 

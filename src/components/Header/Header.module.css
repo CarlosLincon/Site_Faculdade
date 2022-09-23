@@ -131,6 +131,7 @@ header span.nav_link {
 }
 
 @media (max-width: 1280px) {
+
   .nav_branding {
     width: 175px;
     height: 85px;
@@ -172,7 +173,7 @@ header span.nav_link {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #030224;
+    background-color: #080564;
     width: 100%;
     text-align: center;
     -webkit-transition: 0.3s;
@@ -189,7 +190,9 @@ header span.nav_link {
     font-size: 2.2rem;
     height: 125px;
   }
+
   .nav_menu_active {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,13 +204,14 @@ header span.nav_link {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #050438;
-    width: 75%;
+    background-color: #07057a;
+    width: 75vw;
     text-align: center;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     position: fixed;
-  height: 70vh;
+    height: 80vh;
+
   }
 }

@@ -32,7 +32,7 @@ export default function Header() {
     return (
 
 
-        <header>
+        <header >
 
             <nav className={styles.navbar}>
                 <img src={logo} alt="Logo Santissimo" className={styles.nav_branding} />
