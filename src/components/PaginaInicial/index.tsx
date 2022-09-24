@@ -1,18 +1,21 @@
 
 import styles from "./PaginaInicial.module.css";
-import ListaIMG from "./ListaDeImagens.json";
+import ListaIMG from "../../ListaDeImagens.json";
 import TamanhoDaTela from "../TamanhoDaTela";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import { Stack, Pagination, PaginationItem } from "@mui/material";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
+import React, { MouseEvent } from 'react';
+import Slider from "../Slider";
 
 
 const PaginaInicial = () => {
+
+
     let TamanhoTela = TamanhoDaTela();
-    let TelaMinima = 800;
+    let TelaMinima = 1023;
 
     const [isActive, setActive] = useState(true);
 
@@ -23,11 +26,13 @@ const PaginaInicial = () => {
         } else {
             setActive(true);
         }
+
     })
 
 
+
     return (
-        <section className="container" >
+        <section className={styles.container} >
             {
                 isActive ? (
                     <div className={classNames({
@@ -35,29 +40,21 @@ const PaginaInicial = () => {
                         [styles.grid_container]: isActive
                     })}>
                         {ListaIMG.map(item => (
-                            <div key={item.id} className={styles.grid_item}><img src={item.src} alt={item.discricao} /></div>
+                            <div key={item.id}
+                                className={styles.grid_item}>
+                                <img src={item.src}
+                                    alt={item.descricao} /></div>
                         ))}
 
                     </div>
                 ) : (
-                    <div className={styles.containerGrid}>
-                        <div className={styles.grid_container_mb}>
-                            {ListaIMG.map(item => (
-                                <div key={item.id} className={styles.grid_item_mb}><img src={item.src} alt={item.discricao} /></div>
-                            ))}
-                        </div>
-                        <Stack spacing={2}>
-                            <Pagination
-                                count={ListaIMG.length}
-                                renderItem={(item) => (
-                                    <PaginationItem
-                                        components={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
-                                        {...item}
-                                    />
-                                )}
-                            />
-                        </Stack>
-                    </div>
+                    <>
+
+
+                        <Slider slider={ListaIMG} />
+
+
+                    </>
 
                 )
             }

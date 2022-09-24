@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "descricao": "vagas para monitorias",
+    "src": "/assets/images/monitoria.png",
+    "slideIndex": 0
+  },
+  {
+    "id": 2,
+    "descricao": "Seleção dos docentes",
+    "src": "/assets/images/edital_professores.png",
+    "slideIndex": 1
+  },
+  {
+    "id": 3,
+    "descricao": "Códigos de turma",
+    "src": "/assets/images/passoapasso.png",
+    "slideIndex": 2
+  }
+ 
+]

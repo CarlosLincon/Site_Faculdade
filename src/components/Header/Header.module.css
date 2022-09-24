@@ -97,6 +97,7 @@ header span.nav_link {
   -ms-flex-align: center;
   align-items: center;
   gap: 60px;
+  z-index: 2;
 }
 
 .nav_branding {
@@ -173,7 +174,7 @@ header span.nav_link {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #080564;
+    background-color: #080722;
     width: 100%;
     text-align: center;
     -webkit-transition: 0.3s;
@@ -188,7 +189,8 @@ header span.nav_link {
     width: 50%;
     background-color: #f1f1f1;
     font-size: 2.2rem;
-    height: 125px;
+    height: 55px;
+    max-width: 250px;
   }
 
   .nav_menu_active {
@@ -204,8 +206,9 @@ header span.nav_link {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #07057a;
-    width: 75vw;
+    background-color: #080722;
+    min-width: 350px;
+    width: 55vw;
     text-align: center;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
