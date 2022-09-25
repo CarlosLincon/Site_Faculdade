@@ -1,5 +1,6 @@
 .container {
   width: 80%;
+  height: 100vh;
   text-align: center;
 }
 
@@ -11,17 +12,13 @@
   width: 50%;
 }
 
-
-
-.corrousel .thumbs{
- display: flex;
-align-items: center;
- justify-content: center;
+.corrousel .thumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .corrousel .thumb {
-  
   width: 5%;
   height: 50px;
-  
 }
