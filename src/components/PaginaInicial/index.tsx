@@ -23,7 +23,7 @@ const PaginaInicial = () => {
     return (
         <section className={styles.container} >
 
-            <Carousel className={styles.main_slide} showStatus={false} infiniteLoop={true} interval={3000} autoPlay={true} showArrows={false} showThumbs={false}>
+            <Carousel className={styles.main_slide} showStatus={false} infiniteLoop={true} interval={3000} autoPlay={true} showArrows={false} showThumbs={false} stopOnHover={true}>
                 {ListaIMG.map(item => (
                     item.Tipo === 0 ? (
                         <div key={item.id}>
