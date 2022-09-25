@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.2004fad0.css",
-    "main.js": "./static/js/main.82a6d8f3.js",
-    "static/js/496.eb4ba858.chunk.js": "./static/js/496.eb4ba858.chunk.js",
-    "static/media/faculdade_branco.png": "./static/media/faculdade_branco.de8bc95c7127d1d670dc.png",
-    "index.html": "./index.html",
-    "main.2004fad0.css.map": "./static/css/main.2004fad0.css.map",
-    "main.82a6d8f3.js.map": "./static/js/main.82a6d8f3.js.map",
-    "496.eb4ba858.chunk.js.map": "./static/js/496.eb4ba858.chunk.js.map"
+    "main.css": "/static/css/main.2004fad0.css",
+    "main.js": "/static/js/main.f32b39c4.js",
+    "static/js/496.eb4ba858.chunk.js": "/static/js/496.eb4ba858.chunk.js",
+    "static/media/faculdade_branco.png": "/static/media/faculdade_branco.de8bc95c7127d1d670dc.png",
+    "index.html": "/index.html",
+    "main.2004fad0.css.map": "/static/css/main.2004fad0.css.map",
+    "main.f32b39c4.js.map": "/static/js/main.f32b39c4.js.map",
+    "496.eb4ba858.chunk.js.map": "/static/js/496.eb4ba858.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2004fad0.css",
-    "static/js/main.82a6d8f3.js"
+    "static/js/main.f32b39c4.js"
   ]
 }
