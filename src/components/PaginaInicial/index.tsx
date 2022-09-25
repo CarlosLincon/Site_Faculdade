@@ -4,10 +4,6 @@ import ListaIMG from "../../ListaDeImagens.json";
 import TamanhoDaTela from "../TamanhoDaTela";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
-import { Stack, Pagination, PaginationItem } from "@mui/material";
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import React, { MouseEvent } from 'react';
 import Slider from "../Slider";
 
 
@@ -27,7 +23,7 @@ const PaginaInicial = () => {
             setActive(true);
         }
 
-    })
+    },[TamanhoTela,TelaMinima])
 
 
 
