@@ -12,8 +12,8 @@ interface Props {
 const Slider = ({ slider }: Props) => {
 
   const [indexAtual, setIndexAtual] = useState(0);
-
   let ButtonSlideCont: number;
+
 
   const goToSlide = (slideIndex: number) => {
 
@@ -23,6 +23,10 @@ const Slider = ({ slider }: Props) => {
   };
 
 
+  const quantidadeDeBotoes = (index: number) => {
+    ButtonSlideCont = index + 1;
+    return ButtonSlideCont;
+  }
 
 
 
@@ -39,6 +43,7 @@ const Slider = ({ slider }: Props) => {
       </div>
       <div className={styles.container_slider_opcao_slide}>
         {slider.map((slide, index) => (
+
           <div className={classNames({
             [styles.div_opcao_slide]: true,
             [styles.div_opcao_slide_ativo]: indexAtual === index,
@@ -47,7 +52,7 @@ const Slider = ({ slider }: Props) => {
             key={index}
             onClick={() => goToSlide(index)}
           >
-            {ButtonSlideCont = index + 1}
+            {quantidadeDeBotoes(index)}
           </div>
 
         ))}
