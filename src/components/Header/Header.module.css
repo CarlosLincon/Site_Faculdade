@@ -132,17 +132,15 @@ header span.nav_link {
 }
 
 @media (max-width: 1280px) {
-
   .nav_branding {
     width: 175px;
     height: 85px;
     margin-right: 50px;
     object-fit: contain;
   }
-  
+
   header span.nav_link {
-  
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .hamburger {
     display: block;
@@ -169,6 +167,7 @@ header span.nav_link {
     position: fixed;
     left: -100%;
     top: 100px;
+    height: 80vh;
     gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -181,20 +180,8 @@ header span.nav_link {
     -o-transition: 0.3s;
     transition: 0.3s;
   }
-  .nav_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 16px 0;
-    width: 50%;
-    background-color: #f1f1f1;
-    font-size: 2.2rem;
-    height: 55px;
-    max-width: 250px;
-  }
 
   .nav_menu_active {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,6 +202,16 @@ header span.nav_link {
     transition: 0.3s;
     position: fixed;
     height: 80vh;
-
+  }
+  .nav_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+    width: 50%;
+    background-color: #f1f1f1;
+    font-size: 2.2rem;
+    height: 55px;
+    max-width: 250px;
   }
 }

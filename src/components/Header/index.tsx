@@ -26,7 +26,7 @@ export default function Header() {
         } else {
 
         }
-    })
+    },[TamanhoTela])
 
 
     return (

@@ -1,7 +1,7 @@
 .container_slider {
+  max-height: 400px;
   height: 50vh;
   width: 100%;
-  background-color: #030224;
 }
 
 .container_slider_image {
@@ -21,58 +21,66 @@
 
 .container_slider_opcao_slide {
   width: 100%;
-
+  padding: 2% 10%;
   height: 15%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .div_opcao_slide {
-  background: #f6f7fd;
-  border: 1px solid #e0e6ed;
-  border-radius: 30px;
-  color: #8492a6;
-  display: inline-block;
-  font-size: 12px;
-  height: 30px;
-  margin: 0 8px 10px;
-  padding: 5px;
-  text-align: center;
-  width: 30px;
-  font-family: "Poppins", sans-serif;
-  cursor: pointer;
-  user-select: none;
-
-}
-
-.div_opcao_slide_ativo {
-  background: #f6f7fd;
-  border: 1px solid #e0e6ed;
-  border-radius: 30px;
-  color: #00065c;
-  font-size: 15px;
-  height: 37px;
+  opacity: 0.9;
+  border-radius: 500px;
+  background-color: #b1b2b4;
+  color: #050505;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
+  height: 1.5rem;
   padding: 5px;
-  width: 38px;
+  width: 1.5rem;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   user-select: none;
-  position: relative;
-  transition: width .5s ease-in-out,
-  height .5s ease-in-out,
-  border .5s ease-in-out ;
+  margin: 1%;
+  transform: translateY(-2rem);
 }
 
-.div_opcao_slide_ativo::after{
+.div_opcao_slide::after {
   content: " ";
   position: absolute;
-  height: 36px;
-  width: 36px;
-  border-radius: 36px;
-  border: #0d08a7 2px solid;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 1.5rem;
+  border: #010831 2px solid;
+}
+
+.div_opcao_slide_ativo {
+  opacity: 1;
+  border-radius: 500px;
+  background-color: #f5f5f5;
+  color: #010205;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  height: 1.5rem;
+  padding: 5px;
+  width: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  user-select: none;
+  margin: 1%;
+  transform: translateY(-2rem) scale(1.2);
+}
+
+.div_opcao_slide_ativo::after {
+  content: " ";
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 1.5rem;
+  border: #010831 2px solid;
 }
 
 @keyframes fadeIn {

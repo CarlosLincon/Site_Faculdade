@@ -58,9 +58,6 @@ const Slider = ({ slider }: Props) => {
         ))}
       </div >
 
-
-
-
     </div >
   )
 };

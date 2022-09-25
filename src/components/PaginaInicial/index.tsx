@@ -1,59 +1,45 @@
 
 import styles from "./PaginaInicial.module.css";
 import ListaIMG from "../../ListaDeImagens.json";
-import TamanhoDaTela from "../TamanhoDaTela";
-import { useEffect, useState } from "react";
-import classNames from "classnames";
-import Slider from "../Slider";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import { Carousel } from "react-responsive-carousel";
+
+const IFrameDivStyle = {
+    width: "100%", 
+    height: "100%"
+}
+
+const IFrameStyle = {
+    width: "100%", 
+    height: "100%",
+    margin:0,
+}
 
 
 const PaginaInicial = () => {
 
-
-    let TamanhoTela = TamanhoDaTela();
-    let TelaMinima = 1023;
-
-    const [isActive, setActive] = useState(true);
-
-
-    useEffect(() => {
-        if (TamanhoTela <= TelaMinima) {
-            setActive(false);
-        } else {
-            setActive(true);
-        }
-
-    },[TamanhoTela,TelaMinima])
-
-
-
     return (
         <section className={styles.container} >
-            {
-                isActive ? (
-                    <div className={classNames({
-                        [styles.grid_container_mb]: !isActive,
-                        [styles.grid_container]: isActive
-                    })}>
-                        {ListaIMG.map(item => (
-                            <div key={item.id}
-                                className={styles.grid_item}>
-                                <img src={item.src}
-                                    alt={item.descricao} /></div>
-                        ))}
 
-                    </div>
-                ) : (
-                    <>
+            <Carousel className={styles.main_slide} showStatus={false} infiniteLoop={true} interval={3000} autoPlay={true} showArrows={false} showThumbs={false}>
+                {ListaIMG.map(item => (
+                    item.Tipo === 0 ? (
+                        <div key={item.id}>
+                            <img src={item.src}
+                                alt={item.descricao} /></div>
+                    ) : (
+                        <div key={item.id} style={IFrameDivStyle} >
+                            <iframe  style={IFrameStyle} title={item.descricao} src={item.src}
+                            > </iframe></div>
+                    )
+                ))}
+            </Carousel>
 
 
-                        <Slider slider={ListaIMG} />
 
 
-                    </>
-
-                )
-            }
 
         </section >
 
