@@ -51,6 +51,7 @@
 
 header {
   background-color: #040249;
+  z-index: 15;
 }
 
 header li {
@@ -68,12 +69,14 @@ header span.nav_link {
   white-space: nowrap;
 }
 
-.nav_item {
+.nav_item,
+.nav_item_active {
   min-width: 75px;
   width: auto;
 }
 
 .navbar {
+  position: relative;
   min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,7 +100,7 @@ header span.nav_link {
   -ms-flex-align: center;
   align-items: center;
   gap: 60px;
-  z-index: 2;
+  z-index: 15;
 }
 
 .nav_branding {
@@ -203,7 +206,8 @@ header span.nav_link {
     position: fixed;
     height: 80vh;
   }
-  .nav_item {
+  .nav_item,
+  .nav_item_active {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,4 +218,47 @@ header span.nav_link {
     height: 55px;
     max-width: 250px;
   }
+}
+
+.nav_item ul {
+  display: none;
+  position: relative;
+}
+
+.nav_item_active ul {
+  display: grid;
+  position: absolute;
+  grid-template-columns: auto auto auto;
+
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  transform: translateY(-25px);
+  margin-top: 30px;
+  background-color: #090492;
+  min-width: 50vw;
+  padding: 2%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.nav_item_active ul li {
+  display: flex;
+  justify-content: space-between;
+  min-height: 55px;
+  max-width: 250px;
+  padding: 2%;
+}
+
+.nav_item_active ul li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 250px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #030224;
+  color: #f1f1f1;
 }

@@ -9,7 +9,7 @@ export default function NotFound() {
         }>
             <div className={styles.voltar}>
                 <button onClick={() => navigate(-1)}>
-                    {"< Voltar"}</button>
+                    {"Voltar"}</button>
             </div>
             <NotFoundImage />
         </div >
