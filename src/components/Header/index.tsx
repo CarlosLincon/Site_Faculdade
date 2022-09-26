@@ -10,13 +10,13 @@ import TamanhoDaTela from "../TamanhoDaTela";
 
 
 
+
 export default function Header() {
 
     let TamanhoTela = TamanhoDaTela();
     const [isActive, setActive] = useState(false);
     const [isActiveLi, setActiveLi] = useState(false);
-    const [targetAtual, setTargetAtual] = useState<EventTarget>();
-
+    const [idActive, setIdActive] = useState(0);
 
 
     const toggleClass = () => {
@@ -32,12 +32,12 @@ export default function Header() {
     }, [TamanhoTela])
 
 
-    function trocandoAclasseOn() {
-        // let target = e.target;
-        // setTargetAtual(target);
+    function trocandoAclasseOn(id: number) {
         setActiveLi(true);
+        setIdActive(id);
     }
-    function trocandoAclasseOut() {
+    function trocandoAclasseOut(id: number) {
+        setIdActive(id);
         setActiveLi(false);
     }
 
@@ -55,14 +55,14 @@ export default function Header() {
                     })}
                 >
                     <li className={styles.nav_item}>
-                        <span className={styles.nav_link}>Home <AiFillCaretDown /></span>
+                        <span className={styles.nav_link}>Home </span>
 
                     </li>
                     <li className={classNames({
-                        [styles.nav_item]: !isActiveLi,
-                        [styles.nav_item_active]: isActiveLi 
-                    })} onMouseOver={(() => { trocandoAclasseOn() })}
-                        onMouseLeave={(() => { trocandoAclasseOut() })}>
+                        [styles.nav_item]: !isActiveLi || idActive != 1,
+                        [styles.nav_item_active]: isActiveLi === true && idActive === 1
+                    })} onMouseOver={(() => { trocandoAclasseOn(1) })}
+                        onMouseLeave={(() => { trocandoAclasseOut(0) })}>
                         <span className={styles.nav_link}>Graduação <AiFillCaretDown /></span>
                         <ul>
                             <li><span>Administração</span></li>
@@ -77,41 +77,59 @@ export default function Header() {
                         </ul>
                     </li>
                     <li className={styles.nav_item}>
-                        <span className={styles.nav_link}> Pós-Grauação <AiFillCaretDown /></span>
+                        <span className={styles.nav_link}> Pós-Grauação </span>
                     </li>
                     <li className={classNames({
-                        [styles.nav_item]: !isActiveLi,
-                        [styles.nav_item_active]: isActiveLi
-                    })} onMouseOver={(() => { trocandoAclasseOn() })} onMouseLeave={(() => { trocandoAclasseOut() })}>
+                        [styles.nav_item]: !isActiveLi || idActive != 2,
+                        [styles.nav_item_active]: isActiveLi === true && idActive === 2
+                    })} onMouseOver={(() => { trocandoAclasseOn(2) })}
+                        onMouseLeave={(() => { trocandoAclasseOut(0) })}>
                         <span className={styles.nav_link}>Acadêmico <AiFillCaretDown /></span>
                         <ul>
-                            <li>E-book</li>
-                            <li>Extensão</li>
-                            <li>Estágio</li>
-                            <li>Solicitação de Diploma</li>
-                            <li>Mensalidades e Taxas</li>
-                            <li>Manual do Aluno</li>
-                            <li>Colação de Grau</li>
-                            <li>Histórico</li>
-                            <li>Caderneta On-line</li>
-                            <li>Certificados</li>
-                            <li>Biblioteca</li>
+                            <li><span>E-book</span></li>
+                            <li><span>Extensão</span></li>
+                            <li><span>Estágio</span></li>
+                            <li><span>Solicitação de Diploma</span></li>
+                            <li><span>Mensalidades e Taxas</span></li>
+                            <li><span>Manual do Aluno</span></li>
+                            <li><span>Colação de Grau</span></li>
+                            <li><span>Histórico</span></li>
+                            <li><span>Caderneta On-line</span></li>
+                            <li><span>Certificados</span></li>
+                            <li><span>Biblioteca</span></li>
 
                         </ul>
                     </li>
                     <li className={classNames({
-                        [styles.nav_item]: !isActiveLi,
-                        [styles.nav_item_active]: isActiveLi
-                    })} onMouseOver={(() => { trocandoAclasseOn() })}
-                        onMouseLeave={(() => { trocandoAclasseOut() })}>
+                        [styles.nav_item]: !isActiveLi || idActive != 3,
+                        [styles.nav_item_active]: isActiveLi === true && idActive === 3
+                    })} onMouseOver={(() => { trocandoAclasseOn(3) })}
+                        onMouseLeave={(() => { trocandoAclasseOut(0) })}>
                         <span className={styles.nav_link}>Institucional <AiFillCaretDown /></span>
+                        <ul>
+                            <li><span>A Faculdade</span></li>
+                            <li><span>Infraestrutura</span></li>
+                            <li><span>Corpo Administrativo</span></li>
+                            <li><span>Corpo Docente</span></li>
+                            <li><span>Regimentos</span></li>
+                            <li><span>Publicações</span></li>
+                            <li><span>Logomarca</span></li>
+                            <li><span>CPA</span></li>
+                            <li><span>Empresas Parceiras</span></li>
+
+                        </ul>
                     </li>
                     <li className={classNames({
-                        [styles.nav_item]: !isActiveLi,
-                        [styles.nav_item_active]: isActiveLi
-                    })} onMouseOver={(() => { trocandoAclasseOn() })}
-                        onMouseLeave={(() => { trocandoAclasseOut() })} >
+                        [styles.nav_item]: !isActiveLi || idActive != 4,
+                        [styles.nav_item_active]: isActiveLi === true && idActive === 4
+                    })} onMouseOver={(() => { trocandoAclasseOn(4) })}
+                        onMouseLeave={(() => { trocandoAclasseOut(0) })} >
                         <span className={styles.nav_link}>Contato <AiFillCaretDown /></span>
+                        <ul>
+                            <li><span>Fale Conosco</span></li>
+                            <li><span>Localização</span></li>
+
+                        </ul>
                     </li>
                 </ul>
                 <div

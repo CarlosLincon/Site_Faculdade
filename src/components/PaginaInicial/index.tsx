@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { Carousel } from "react-responsive-carousel";
 import JanelaModal from "./JanelaModal";
+import SantissimoAcontece from "../SantissimoAcontece";
 
 const IFrameDivStyle = {
     width: "100%",
@@ -40,7 +41,7 @@ const PaginaInicial = () => {
                 ))}
             </Carousel>
 
-
+            <SantissimoAcontece />
 
 
 

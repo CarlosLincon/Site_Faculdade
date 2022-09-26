@@ -1,6 +1,7 @@
 .container {
   width: 80%;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   text-align: center;
 }
 
@@ -8,17 +9,4 @@
   padding-top: 30px;
 }
 
-.corrousel .slide-wrapper {
-  width: 50%;
-}
 
-.corrousel .thumbs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.corrousel .thumb {
-  width: 5%;
-  height: 50px;
-}
