@@ -58,6 +58,11 @@ header li {
   list-style: none;
 }
 
+header li a {
+  list-style: none;
+  text-decoration: none;
+}
+
 header span.nav_link {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
@@ -227,6 +232,7 @@ header span.nav_link {
 @media (min-width: 1281px) {
   .nav_item ul,
   .nav_item_active ul {
+    overflow: "scroll";
     position: absolute;
     transform: translateX(10000px);
     margin-top: 30px;
@@ -243,6 +249,7 @@ header span.nav_link {
   .nav_item_active ul li {
     background: #1f4588;
     min-height: 55px;
+    max-height: 50vh;
     max-width: 250px;
     margin: 10px;
     display: flex;
@@ -276,6 +283,7 @@ header span.nav_link {
     display: none;
   }
   .nav_item_active ul {
+    overflow: "scroll";
     position: absolute;
     top: -0;
     left: 0;

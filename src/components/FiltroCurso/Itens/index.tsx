@@ -1,10 +1,17 @@
-import cardapio from './itens.json';
+import cardapio from '../../../data/itens.json';
 import Item from './Item';
 import { useState, useEffect } from "react";
 
 interface Props {
   busca: string
 }
+
+
+
+
+
+
+
 
 export default function Itens(props: Props) {
   const [lista, setLista] = useState(cardapio);

@@ -11,14 +11,13 @@ export default function CardapioCursos() {
     <>
 
       <section className={styles.cardapio}>
-        <h3 className={styles.cardapio__titulo}>Cursos do Santissimo</h3>
+        <h3 className={styles.cardapio__titulo}>Nossos Graduação</h3>
         <Buscador busca={busca} setBusca={setBusca} />
         <div className={styles.cardapio__filtros}>
         </div>
         <Box sx={{
           display: "grid",
-          grid: "auto/auto auto auto",
-          gridGap: "10px", marginBottom:"90px"
+          gridTemplateColumns: "1fr 1fr 1fr", marginBottom: "90px", gap:"50px", marginTop:"30px" 
         }}>
           <Itens busca={busca} />
         </Box>

@@ -11,12 +11,12 @@ import EnemImg from "../../images/SantissimoNews/banner-site-epo.png";
 
 const SantissimoAcontece = () => {
   return (<>
-    <Card sx={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "55px" }}>
+    <Card sx={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "55px", maxWidth:"80vw" }}>
       <Typography gutterBottom variant="h2" component="div" sx={{ color: "#030224" }}>
         Santissimo News
       </Typography>
     </Card>
-    <Card sx={{ minWidth: "33%", display: "flex", justifyContent: "center", alignItems: "center", marginTop: "55px" }}>
+    <Card sx={{ minWidth: "33%", maxWidth:"80vw", display: "flex", justifyContent: "center", alignItems: "center", margin: "55px auto" }}>
 
       <CardActionArea sx={{ color: "#030224", minHeight: "356px" }}>
         <CardMedia

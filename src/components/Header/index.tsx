@@ -4,6 +4,7 @@ import logo from "../../images/faculdade_branco.png";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
 import TamanhoDaTela from "../TamanhoDaTela";
+import { Link } from "react-router-dom";
 
 
 
@@ -55,32 +56,32 @@ export default function Header() {
                     })}
                 >
                     <li className={styles.nav_item}>
-                        <span className={styles.nav_link}>Home </span>
+                        <Link to="/"> <span className={styles.nav_link}>Home</span>   </Link>
 
                     </li>
                     <li className={classNames({
-                        [styles.nav_item]: !isActiveLi || idActive != 1,
+                        [styles.nav_item]: !isActiveLi || idActive !== 1,
                         [styles.nav_item_active]: isActiveLi === true && idActive === 1
                     })} onMouseOver={(() => { trocandoAclasseOn(1) })}
                         onMouseLeave={(() => { trocandoAclasseOut(0) })}>
                         <span className={styles.nav_link}>Graduação <AiFillCaretDown /></span>
                         <ul>
-                            <li><span>Administração</span></li>
-                            <li><span>Ciências Contábeis</span></li>
-                            <li><span>Direito</span></li>
-                            <li><span>Enfermagem</span></li>
-                            <li><span>Engenharia de Produção</span></li>
-                            <li><span>Pedagogia</span></li>
-                            <li><span>Psicologia</span></li>
-                            <li><span>Serviço Social</span></li>
-                            <li><span>Sistemas de Informação</span></li>
+                            <li><Link to="/cursos/administracao"><span>Administração</span></Link></li>
+                            <li><Link to="/cursos/cienciascontabeis"><span>Ciências Contábeis</span></Link></li>
+                            <li><Link to="/cursos/direito"><span>Direito</span></Link></li>
+                            <li><Link to="/cursos/enfermagem"><span>Enfermagem</span></Link></li>
+                            <li><Link to="/cursos/engenhariadeproducao"><span>Engenharia de Produção</span></Link></li>
+                            <li><Link to="/cursos/pedagogia"><span>Pedagogia</span></Link></li>
+                            <li><Link to="/cursos/psicologia"><span>Psicologia</span></Link></li>
+                            <li><Link to="/cursos/servicosocial"><span>Serviço Social</span></Link></li>
+                            <li><Link to="/cursos/sistemasdeinformacao"><span>Sistemas de Informação</span></Link></li>
                         </ul>
                     </li>
                     <li className={styles.nav_item}>
                         <span className={styles.nav_link}> Pós-Grauação </span>
                     </li>
                     <li className={classNames({
-                        [styles.nav_item]: !isActiveLi || idActive != 2,
+                        [styles.nav_item]: !isActiveLi || idActive !== 2,
                         [styles.nav_item_active]: isActiveLi === true && idActive === 2
                     })} onMouseOver={(() => { trocandoAclasseOn(2) })}
                         onMouseLeave={(() => { trocandoAclasseOut(0) })}>
@@ -101,7 +102,7 @@ export default function Header() {
                         </ul>
                     </li>
                     <li className={classNames({
-                        [styles.nav_item]: !isActiveLi || idActive != 3,
+                        [styles.nav_item]: !isActiveLi || idActive !== 3,
                         [styles.nav_item_active]: isActiveLi === true && idActive === 3
                     })} onMouseOver={(() => { trocandoAclasseOn(3) })}
                         onMouseLeave={(() => { trocandoAclasseOut(0) })}>
@@ -120,7 +121,7 @@ export default function Header() {
                         </ul>
                     </li>
                     <li className={classNames({
-                        [styles.nav_item]: !isActiveLi || idActive != 4,
+                        [styles.nav_item]: !isActiveLi || idActive !== 4,
                         [styles.nav_item_active]: isActiveLi === true && idActive === 4
                     })} onMouseOver={(() => { trocandoAclasseOn(4) })}
                         onMouseLeave={(() => { trocandoAclasseOut(0) })} >

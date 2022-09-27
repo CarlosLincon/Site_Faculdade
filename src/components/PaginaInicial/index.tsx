@@ -9,6 +9,8 @@ import JanelaModal from "./JanelaModal";
 import SantissimoAcontece from "../SantissimoAcontece";
 import CardapioCursos from "../FiltroCurso";
 import { Card } from "@mui/material";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const IFrameDivStyle = {
     width: "100%",
@@ -23,6 +25,13 @@ const IFrameStyle = {
 
 
 const PaginaInicial = () => {
+    const routePath = useLocation();
+    const onTop = () => {
+        window.scrollTo(0, 0);
+    }
+    useEffect(() => {
+        onTop()
+    }, [routePath]);
 
     return (
         <section className={styles.container} >
@@ -44,9 +53,9 @@ const PaginaInicial = () => {
             </Carousel>
 
             <SantissimoAcontece />
-            <Card sx={{ maxWidth: "80vw", marginTop: "50px"}}>
-                <CardapioCursos />
-            </Card>
+
+            <CardapioCursos />
+
         </section >
 
     )

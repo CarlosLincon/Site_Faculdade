@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Direito",
+    "description": "Desenvolver o ensino, a pesquisa e a extensão, considerando o(a) aluno(a) como sujeito de seu próprio desenvolvimento, possibilitando a elaboração da experiência humana de forma crítica e criativa.",
+    "photo": "/assets/ImagensCursos/direito.jpg",
+    "price": 891,
+    "id": 1,
+    "year": 4,
+    "router":"direito"
+  },
+  {
+    "title": "Administração",
+    "description": "Formar bacharéis em Administração que possam exercer suas atribuições profissionais, com competência e responsabilidade ética, perante as organizações e a sociedade, possuidor de visão crítica e analítica, com capacidade de antecipar e promover mudanças, gerir conhecimentos para planejar e tomar decisões, que contribuam para a melhoria da qualidade de vida.",
+    "photo": "/assets/ImagensCursos/ADM.png",
+    "price": 780,
+    "id": 2,
+    "year": 4,
+    "router":"administracao"
+
+  },
+  {
+    "title": "Sistemas de Informação",
+    "description": "A Faculdade Santíssimo Sacramento pretende, através do curso de Bacharelado em Sistemas de Informação, formar profissionais capazes de atuar como programadores de computador, analistas e projetistas de sistemas, para a área de aplicações comerciais. Com capacitação complementar, estes profissionais poderão desempenhar funções gerenciais, tais como administradores de banco de dados, administradores de redes e também poderão dar suporte a sistemas, dentre outros. O egresso desse curso deverá ser basicamente um “solucionador de problemas” que desempenhará suas atividades no desenvolvimento e implantação de sistemas de informação, integração de tecnologias e suporte técnico a recursos computacionais;",
+    "photo": "/assets/ImagensCursos/sistemasdeinformacao.jpg",
+    "price": 780,
+    "id": 3,
+    "year": 4,
+    "router":"sistemasdeinformacao"
+
+  },
+  {
+    "title": "Enfermagem",
+    "description": "Desenvolver o ensino, a pesquisa e a extensão, considerando o(a) aluno(a) como sujeito de seu próprio desenvolvimento, possibilitando a elaboração da experiência humana de forma crítica e criativa.",
+    "photo": "/assets/ImagensCursos/enfermagem.jpg",
+    "price": 1.087,
+    "id": 4,
+    "year": 4,
+    "router":"enfermagem"
+
+  },
+  {
+    "title": "Psicologia",
+    "description": "O curso de Psicologia da Faculdade Santíssimo Sacramento tem como missão, através da excelência do ensino, da pesquisa e da extensão, formar profissionais competentes e críticos, preparados para implementar transformações que melhorem a qualidade de vida da comunidade na qual se inserem. Assim como oferecer à sociedade, psicólogos preocupados com a compreensão mais ampla da atividade humana, considerando criticamente os múltiplos referenciais que buscam apreender a amplitude do fenômeno psicológico em suas interfaces com os fenômenos ambientais, biológicos, sociais e culturais.",
+    "photo": "/assets/ImagensCursos/psicologia.jpg",
+    "price": 1.119,
+    "id": 5,
+    "year": 5,
+    "router":"psicologia"
+
+  },
+  {
+    "title": "Pedagogia",
+    "description": "O curso de Pedagogia tem como missão formar pedagogos para exercer de forma interdisciplinar, funções no magistério e em outras áreas nas quais sejam previstos conhecimentos pedagógicos.",
+    "photo": "/assets/ImagensCursos/pedagogia.jpg",
+    "price": 475,
+    "id": 6,
+    "year": 4,
+    "router":"pedagogia"
+
+  },
+  {
+    "title": "Engenharia De Produção",
+    "description": "Formar Engenheiros de Produção aptos a atuar de forma inovadora e diferenciada em empresas dos diversos segmentos como: Indústrias Químicas, Petroquímicas, do Petróleo e de Manufatura, Montadoras de Veículos, Construtoras, Bancos, Empresas de Serviços, Empresas de Consultoria e Órgãos Governamentais, dentre outras, que possam exercer suas atribuições profissionais, com competência e responsabilidade ética, perante as organizações e a sociedade, dotados de senso crítico e analítico, com capacidade de antecipar e promover mudanças, gerir conhecimentos para planejar e tomar decisões que contribuam para a melhoria da qualidade de vida, conscientes do seu papel social, profissional e do seu compromisso com a cidadania.",
+    "photo": "/assets/ImagensCursos/engenhariadeproducao.jpg",
+    "price": 1.087,
+    "id": 7,
+    "year": 5,
+    "router":"engenhariadeproducao"
+
+  },
+  {
+    "title": "Ciências Contábeis",
+    "description": "Formar bacharéis em Contabilidade com valores morais e éticos, que tenham a capacidade de desenvolver suas atividades com responsabilidade e zelo, utilizando os sistemas de informação como ferramenta no gerenciamento das informações para o auxílio do processo decisório nas diversas organizações.",
+    "photo": "/assets/ImagensCursos/contabilidade.jpg",
+    "price": 780,
+    "id": 8,
+    "year": 4,
+    "router":"cienciascontabeis"
+
+  },
+  {
+    "title": "Serviço Social",
+    "description": "Contribuir para a defesa e garantia dos direitos sociais, visando a construir uma sociedade mais justa e igualitária para a emancipação dos cidadãos, por meio do acesso universal às políticas públicas",
+    "photo": "/assets/ImagensCursos/servicosocial.jpg",
+    "price": 475,
+    "id": 9,
+    "year": 1,
+    "router":"servicosocial"
+  }
+]

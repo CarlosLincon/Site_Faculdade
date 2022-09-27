@@ -1,11 +1,14 @@
 .container {
-  width: 80%;
+  width: 100%;
   min-height: 100vh;
   height: auto;
   text-align: center;
+  position: relative;
 }
 
+
 .main_slide {
+  max-width: 80%;
   padding-top: 30px;
 }
 

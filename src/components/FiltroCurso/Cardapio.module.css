@@ -23,7 +23,7 @@
   --desktop_md: 1280px;
 }
 
-.menu {
+ .menu {
   padding: 20px var(--padding-horizontal);
 }
 
@@ -77,4 +77,11 @@
   .cardapio {
     padding: 50px var(--padding-horizontal-md);
   }
+} 
+
+
+.cardapio {
+  width: 100vw;
+  background-color: #242536;
+  padding: 10px;
 }
