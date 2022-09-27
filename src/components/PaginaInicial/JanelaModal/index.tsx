@@ -13,11 +13,11 @@ const style = {
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
- 
+
 };
 
 const styleIMG = {
-    width:"100%",
+    width: "100%",
     height: "100%"
 }
 
@@ -35,9 +35,12 @@ export default function JanelaModal() {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
-                   <img style={styleIMG} src={img} alt="Inscrições para o Vestibular" />
+                    <img style={styleIMG} src={img} alt="Inscrições para o Vestibular" />
                 </Box>
             </Modal>
+                
+             
+
         </div>
     )
 
