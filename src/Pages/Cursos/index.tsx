@@ -23,12 +23,12 @@ export default function Cursos() {
         return <NotFound />;
     }
 
-    const Icontainer = {
+    // const Icontainer = {
 
-        backgroundImage: `url(${curso.photo})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-    }
+    //     backgroundImage: `url(${curso.photo})`,
+    //     backgroundSize: "cover",
+    //     backgroundPosition: "center",
+    // }
 
 
 
@@ -38,41 +38,12 @@ export default function Cursos() {
                 <Route index element={
                     <>
 
-                        <section className={styles.container} style={Icontainer}>
+                        <main className={styles.container} >
+                            <div className={styles.conteudo}>
 
-                            <div style={Icontainer}>
-                                <div className={styles.conteudo}>
-                                    <h1 className={styles.titulo}> {curso.title}</h1>
-                                    <main className={styles.containerMain}>
-                                       
-                                       <nav>
-                                        <ul>
-                                            <li>Sobre o Curso</li>
-                                            <li>Missão</li>
-                                            <li>Objetivos</li>
-                                            <li>Perfil do Egresso</li>
-                                            <li>Mensalidade</li>
-                                            <li>Coordenador</li>
-                                            <li>Corpo Docente</li>
-                                            <li>Núcleo Docente Estruturante (NDE)</li>
-                                            <li>Fluxograma</li>
-                                            <li>Plano de Ensino</li>
-                                            <li>Matriz Curricular</li>
-                                            <li>Horários</li>
-                                            <li>Barema - Atividades Complementares de Curso</li>
-                                            <li>Periódicos</li>
-                                            <li>Avaliação</li>
-                                            <li>Galeria do Curso</li>
 
-                                            
-                                        </ul>
-                                       </nav>
-
-                                    </main> 
-                                  
-                                </div>
                             </div>
-                        </section>
+                        </main>
 
                     </>
                 }

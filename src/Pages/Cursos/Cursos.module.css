@@ -8,6 +8,7 @@
   text-align: center;
   margin: 10px auto;
   font-size: 5rem;
+
 }
 
 .conteudo {
@@ -23,7 +24,7 @@
 }
 
 .containerMain{
-  width: 80vw;
+  width: 90vw;
   min-height: 80vh;
   background-color: #f5f5f5;
 }
