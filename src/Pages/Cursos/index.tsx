@@ -1,10 +1,8 @@
 import styles from "./Cursos.module.css";
-import { useParams, useNavigate, Routes, Route, useLocation } from "react-router-dom";
+import { useParams, Routes, Route, useLocation } from "react-router-dom";
 import cursos from "../../data/itens.json";
 import NotFound from "../../components/NotFound";
 import { useEffect } from "react";
-import { List, ListItem, ListItemText, Divider } from "@mui/material";
-import { style } from "@mui/system";
 
 export default function Cursos() {
 
@@ -17,18 +15,11 @@ export default function Cursos() {
     }, [routePath]);
 
     const { id } = useParams();
-    const navigate = useNavigate();
     const curso = cursos.find(item => item.router === id);
     if (!curso) {
         return <NotFound />;
     }
 
-    // const Icontainer = {
-
-    //     backgroundImage: `url(${curso.photo})`,
-    //     backgroundSize: "cover",
-    //     backgroundPosition: "center",
-    // }
 
 
 
@@ -39,10 +30,50 @@ export default function Cursos() {
                     <>
 
                         <main className={styles.container} >
-                            <div className={styles.conteudo}>
+                            <section className={styles.conteudo_sobre_o_Curso}>
+                                <div className={styles.conteudo_sobre_img}>
+                                    <img src={curso.photo} alt={curso.title} />
+                                    <div className={styles.conteudo_sobre_p}>
+                                        <div className={styles.conteudo_sobre_p_container}>
+
+                                            <h1><span>Graduação</span></h1>
+                                            <h6><span>{curso.title}</span></h6>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div className={styles.container_o_curso}>
+                                    <div>
+                                        <h1>O curso</h1>
+                                        <span>
+                                            {curso.description}
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h1>Obejetivos do Curso</h1>
+
+                                        <span>
+                                            {curso.objetivos}
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h1>Perfil do Aluno</h1>
+                                        <span>
+                                            {curso.perfil}
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <h1>Missão</h1>
+                                        <span>
+                                            {curso.missao}
+                                        </span>
+                                    </div>
+                                </div>
 
 
-                            </div>
+                            </section>
                         </main>
 
                     </>
