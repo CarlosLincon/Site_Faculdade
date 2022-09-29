@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "descricao": "fabrício santos de faro",
+    "src": "http://localhost:3000/assets/Coordenador/faro.jpg",
+    "email": "fabriciofaro@hotmail.com",
+    "name": "Fabrício Santos de Faro",
+    "telefone": "(75) 3182-3174",
+    "link": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4742050J0&tipo=completo&idiomaExibicao=1"
+  },
+  {
+    "id": 2,
+    "descricao": "fabrício santos de faro",
+    "src": "http://localhost:3000/assets/Coordenador/faro.jpg",
+    "email": "fabriciofaro@hotmail.com",
+    "name": "Fabrício Santos de Faro",
+    "telefone": "(75) 3182-3174",
+    "link": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4742050J0&tipo=completo&idiomaExibicao=1"
+  },
+  {
+    "id": 3,
+    "descricao": "Graduado em Ciência da Computação com Enfase em Análise de Sistemas pela UNIFACS, Especialista em Análise de Sistemas pela Fundação Visconde de Cairu, Especialista em Educação à Distância pela UNEB, Mestre em Modelagem Computacional pela Fundação Visconde de Cairu e Doutorando em Família na Sociedade Contemporânea pela UCSAL. Atualmente é Secretário Municipal de Educação do Município de Alagoinhas, Professor 20 Horas do Curso de Análise de Sistemas e Sistemas de Informação da Universidade do Estado da Bahia - Alagoinhas, Professor 40 Horas do Curso Subsequente em Agroindústria do IFBAIANO - Alagoinhas, Diretor Administrativo Financeiro da Faculdade Santíssimo Sacramento, professor dos diversos cursos de graduação, Pós-graduação e Extensão oferecidos pela Faculdade Santíssimo Sacramento, Coordenador do Curso de Graduação em Sistema de Informação da Faculdade Santíssimo Sacramento e Coordenador do Curso de Especialização em Gestão da Informação com Enfase em Redes de Computadores e Aplicações Web da Faculdade Santíssimo Sacramento. Tem experiência nas áreas de Administração Educacional, de Ciência da Computação, Engenharia da Computação e Sistemas de Informação, com ênfase em desenvolvimento de software, redes de computadores, banco de dados e suporte, atuando principalmente nos seguintes temas: Programação Web, Lógica de Programação e Educação a Distância.",
+    "src": "http://localhost:3000/assets/Coordenador/faro.jpg",
+    "email": "fabriciofaro@hotmail.com",
+    "name": "Fabrício Santos de Faro",
+    "telefone": "(75) 3182-3174",
+    "link": "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4742050J0&tipo=completo&idiomaExibicao=1"
+  }
+]

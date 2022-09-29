@@ -1,5 +1,5 @@
 import React from "react";
-
+import styles from "./Buscar.module.css";
 import { CgSearch } from "react-icons/cg";
 
 interface Props {
@@ -9,8 +9,9 @@ interface Props {
 
 export default function Buscador({ busca, setBusca }: Props) {
   return (
-    <div >
+    <div className={styles.containerBusca} >
       <input
+        className={styles.inputBusca}
         value={busca}
         onChange={(evento) => setBusca(evento.target.value)}
         placeholder="Buscar"

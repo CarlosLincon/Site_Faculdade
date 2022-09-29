@@ -15,12 +15,9 @@ export default function CardapioCursos() {
         <Buscador busca={busca} setBusca={setBusca} />
         <div className={styles.cardapio__filtros}>
         </div>
-        <Box sx={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr", marginBottom: "90px", gap:"50px", marginTop:"30px" 
-        }}>
-          <Itens busca={busca} />
-        </Box>
+        <div className={styles.cardapio_container_itens}>
+        <Itens busca={busca} />
+        </div>
       </section>
     </>
   )
